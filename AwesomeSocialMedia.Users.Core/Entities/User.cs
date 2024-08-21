@@ -27,7 +27,7 @@ public class User : AggregateRoot
     public LocationInfo? Location { get; private set; }
     public ContactInfo? Contact { get; private set; }
 
-    public void UpdateProfile(string displayName, string header, string description, LocationInfo locationInfo, ContactInfo contactInfo)
+    public void Update(string displayName, string header, string description, LocationInfo locationInfo, ContactInfo contactInfo)
     {
         DisplayName = displayName;
         Header = header;

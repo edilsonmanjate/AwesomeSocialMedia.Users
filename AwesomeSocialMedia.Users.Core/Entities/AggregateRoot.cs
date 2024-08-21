@@ -11,3 +11,4 @@ public abstract class AggregateRoot : BaseEntity
 
     public List<IEvent> Events { get; private set; }
 }
+ 
