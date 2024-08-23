@@ -15,7 +15,9 @@ public static class ApplicationModule
 
     public static IServiceCollection AddMediator(this IServiceCollection services)
     {
-        services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining(typeof(ApplicationModule)));
+        //services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining(typeof(ApplicationModule)));
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(ApplicationModule)));
+
         return services;
     }
 }
